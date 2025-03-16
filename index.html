@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto - Gana un Super Auto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="main-content">
+        <header class="header-banner">
+            <h1>Amigo Secreto - ¡Gana un Super Auto! 🎁🚗💨</h1>
+            <img src="assets/supercar.png" alt="Super auto">
+        </header>
+
+        <section class="input-section">
+            <h2>Introduce los nombres de tus amigos</h2>
+            <div class="input-wrapper">
+                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+            </div>
+            
+            <ul id="listaAmigos" class="name-list"></ul>
+            <ul id="resultado" class="result-list"></ul>
+
+            <button class="button-draw" onclick="sortearAmigo()">🎲 Sortear</button>
+        </section>
+    </main>
+</body>
+</html>
